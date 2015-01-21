@@ -10,7 +10,7 @@ bool PreButton = false;
 void loop() {
     bool Button = !digitalRead(2);
     if (PreButton == false && Button == true && t > 500) t = 0;
-    if (t<5) digitalWrite(3, true);
+    if (t<9) digitalWrite(3, true);
     else digitalWrite(3, false);
     if (t<10000) t++;
     PreButton = Button;
